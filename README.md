@@ -1,7 +1,7 @@
 # react-native-copy-asset
 
 [![npm version](https://badge.fury.io/js/react-native-copy-asset.svg)](https://badge.fury.io/js/react-native-copy-asset)
-[![Build Status](https://travis-ci.org/ridvanaltun/react-native-copy-asset.svg?branch=master)](https://travis-ci.org/ridvanaltun/react-native-copy-asset)
+[![CircleCI](https://circleci.com/gh/ridvanaltun/react-native-copy-asset/tree/master.svg?style=shield)](https://circleci.com/gh/ridvanaltun/react-native-copy-asset/tree/master)
 
 ## Link and unlink assets to your react-native project with ease!
 
