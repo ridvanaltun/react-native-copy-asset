@@ -1,5 +1,5 @@
 {
-  "name": "react-native-asset",
+  "name": "react-native-copy-asset",
   "version": "2.0.1",
   "description": "Linking and unlinking of assets in your react-native app, works for fonts and sounds",
   "main": "lib/index.js",
@@ -10,11 +10,12 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:report": "npm run lint -- --format html -o ./report.html",
     "test": "jest",
-    "test:watch": "npm test -- --watch"
+    "test:watch": "npm test -- --watch",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unimonkiez/react-native-asset.git"
+    "url": "git+https://github.com/ridvanaltun/react-native-copy-asset.git"
   },
   "keywords": [
     "react-native",
@@ -25,14 +26,14 @@
     "assets",
     "link"
   ],
-  "author": "Yuval Saraf",
+  "author": "Rıdvan Altun",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/unimonkiez/react-native-asset/issues"
+    "url": "https://github.com/ridvanaltun/react-native-copy-asset/issues"
   },
-  "homepage": "https://github.com/unimonkiez/react-native-asset#readme",
+  "homepage": "https://github.com/ridvanaltun/react-native-copy-asset#readme",
   "peerDependencies": {
-    "react-native": "^0.60.0"
+    "react-native": ">=0.60.0"
   },
   "dependencies": {
     "fs-extra": "^7.0.1",
@@ -42,9 +43,28 @@
     "xcode": "^2.0.0"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^5.0.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "jest": "^22.1.4"
+    "jest": "^22.1.4",
+    "release-it": "^15.1.1"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version} [skip ci]",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
   }
 }
